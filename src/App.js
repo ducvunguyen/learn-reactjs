@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Content from './components/Content';
 import Addproduct from './components/Addproduct';
 import State from './components/State';
+import Color from './settingcolor/Color';
 
 class App extends Component{
   AddtoCart(p){
@@ -75,6 +76,14 @@ class App extends Component{
         </div>
         <div className="container-fluid">
           <State />
+        </div>
+
+        <hr/>
+        {/*settingcolor*/}
+        <div className="row">
+          <div className="container-fluid">
+            <Color />
+          </div>
         </div>
       </div>
     );
