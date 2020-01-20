@@ -1,20 +1,21 @@
 import React, {Component} from 'react';
 
 class Result extends Component{
-	showColor(){
-		console.log(this.props.color);
+	setStyle(){
 		return {
 			color : this.props.color,
+			borderColor: this.props.color,
+			fontSize: this.props.fontSize,
 		};
 	}
 
 	render(){
 		return(
 			<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 sizetext">
-				<p>color: red - front size: 15px</p>
+				<p>color: {this.props.color} - front size: {this.props.fontSize}px</p>
 				<div 
-				style={this.showColor()} > 
-				Noi dung setting
+				style={this.setStyle()} > 
+				Noi dung setting: 
 				{this.props.color}
 				</div>
 			</div>
